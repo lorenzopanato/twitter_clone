@@ -1,0 +1,118 @@
+.main-container {
+    margin-left: 31%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left-section {
+    height: 100%;
+    padding-top: 105px;
+    width: 600px;
+}
+
+.tweet-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 13vh;
+    border-bottom: 1px solid rgb(240, 239, 239);
+}
+
+.profile-picture-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.profile-picture {
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tweet-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tweet-search-box {
+    padding-right: 20px;
+    padding-top: 12px;
+    height: 50px;
+}
+
+#tweet-search-bar {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#tweet-search-bar::placeholder {
+    font-size: 20px;
+    color: rgb(113, 112, 112);
+}
+
+.tweet-bottom-row {
+    display: flex;
+    align-items: top;
+    gap: 200px;
+}
+
+.tweet-emojis {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.tweet-emojis img {
+    height: 19px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tweet-emojis img:hover {
+    background-color: rgb(213, 247, 247);
+}
+
+.tweet-bottom-row .tweet-button {
+    width: 80px;
+    font-size: 15px;
+    height: 8px;
+}
+
+.right-section {
+    background-color: white;
+    flex: 1;
+    height: 100vh;
+    z-index: 200;
+    border-left: 1px solid rgb(240, 239, 239);
+}
+
+.search-box {
+    position: fixed;
+}
+
+#search-bar {
+    background-color: rgb(240, 239, 239);
+    border: none;
+    width: 340px;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 42px;
+    border-radius: 25px;
+    display: inline-block;
+    background-image: url(/icons/icons8-search-50.png);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left;
+    background-position-x: 15px;
+}
+
+#search-bar::placeholder {
+    font-size: 15px;
+    color: rgb(97, 106, 108);
+    padding-left: 50px;
+    font-weight: 500;
+}
